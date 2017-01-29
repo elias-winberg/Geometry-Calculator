@@ -1,0 +1,23 @@
+{
+    "author": "Elias Winberg <elias-winberg@outlook.com> (https://github.com/elias-winberg/)",
+    "description": "A geometry calculator",
+    "devDependencies": {
+        "jasmine": "^2.5.3",
+        "tslint": "^4.4.2",
+        "typescript": "^2.1.5"
+    },
+    "files": [
+        "lib/"
+    ],
+    "license": "MIT",
+    "main": "lib/index.js",
+    "name": "geometry-calculator",
+    "scripts": {
+        "build": "tsc",
+        "lint": "tslint src/**/*.ts",
+        "prebuild": "npm run lint",
+        "prepublish": "npm run build && npm run test",
+        "test": "jasmine specs/**/*.spec.js"
+    },
+    "version": "0.0.1"
+}

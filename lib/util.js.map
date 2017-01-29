@@ -1,0 +1,1 @@
+{"version":3,"file":"util.js","sourceRoot":"/home/elias/Documents/Calculator/src/","sources":["util.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAIb;;;;;GAKG;AACH,4BAAmC,KAA6B;IAC5D,MAAM,CAAC,KAAK,CAAC,MAAM,CAAC,UAAC,aAAqB,EAAE,YAAY;QACpD,MAAM,CAAC,aAAa,GAAG,YAAY,CAAC,IAAI,EAAE,CAAC;IAC/C,CAAC,EAAE,CAAC,CAAC,CAAC;AACV,CAAC;AAJD,gDAIC"}
