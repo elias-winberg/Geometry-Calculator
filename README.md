@@ -16,35 +16,128 @@ To run the tests run `npm run test`.
 $ npm run test
 ```
 
-## Example:
-```js
-"use strict";
+## Class: Circle
+The Circle class represents circles.
 
-const assert = require("assert");
+### Circle.Circle(radius) 
 
-const {
-    calculateTotalArea,
-    Rectangle,
-    Triangle
-} = require("geometry-calculator");
+Creates an instance of Circle.
 
-let rectangle = new Rectangle(10, 20);
+**Parameters**
 
-assert(rectangle.area() == 200);
+**radius**: `number`, the radius
 
-assert(rectangle.perimeter() == 60);
+### Circle.area() 
 
-let triangle = new Triangle(3, 4, 5);
+Returns the area of the Circle.
 
-assert(triangle.area() == 6);
+**Returns**: `number`, the area
 
-assert(triangle.perimeter() == 12);
+### Circle.circumference() 
 
-assert(calculateTotalArea([
-    rectangle,
-    triangle
-]) == 206);
-```
+Returns the circumference/perimeter of the Circle.
 
-## `#calculateTotalArea`
-`calculateTotalArea(array)` returns the total area of the `IGeometricShapes` in the array.
+**Returns**: `number`, the circumference/perimeter
+
+### Circle.perimeter() 
+
+Returns the perimeter of the Circle.
+
+**Returns**: `number`, the perimeter
+
+
+## Class: Rectangle
+The Rectangle class represents rectangles.
+
+### Rectangle.Rectangle(length, width) 
+
+Creates an instance of Rectangle.
+
+**Parameters**
+
+**length**: `number`, the length
+
+**width**: `number`, the width
+
+### Rectangle.area() 
+
+Returns the area of the Rectangle.
+
+**Returns**: `number`, the area
+
+### Rectangle.perimeter() 
+
+Returns the perimeter of the Rectangle.
+
+**Returns**: `number`, the perimeter
+
+
+## Class: Square
+The Square class represents squares.
+
+### Square.Square(length) 
+
+Creates an instance of Square.
+
+**Parameters**
+
+**length**: `number`, the length
+
+### Square.area() 
+
+Returns the area of the Square.
+
+**Returns**: `number`, the area
+
+### Square.perimeter() 
+
+Returns the perimeter of the Square.
+
+**Returns**: `number`, the perimeter
+
+
+## Class: Triangle
+The Triangle class represents triangles.
+
+### Triangle.Triangle(a, b, c) 
+
+Creates an instance of Triangle.
+
+**Parameters**
+
+**a**: `number`, the first side of the Triangle
+
+**b**: `number`, the second side of the Triangle
+
+**c**: `number`, the third side of the Triangle
+
+### Triangle.area() 
+
+Returns the area of the Triangle.
+The area is calculated with Heron's formula (https://en.wikipedia.org/wiki/Heron's_formula).
+
+**Returns**: `number`, the area
+
+### Triangle.perimeter() 
+
+Returns the perimeter of the Triangle.
+
+**Returns**: `number`, the perimeter
+
+### Triangle.semiperimeter() 
+
+Returns the semiperimeter of the Triangle.
+The semiperimeter is half of the shape's perimeter.
+
+**Returns**: `number`, the semiperimeter
+
+
+### calculateTotalArea(array) 
+
+Returns the total area of multiple IGeometricShapes.
+
+**Parameters**
+
+**array**: `Array<IGeometricShape>`, the array of IGeometricShapes
+
+**Returns**: `number`, the area
