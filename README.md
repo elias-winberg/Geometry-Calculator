@@ -1,6 +1,14 @@
 # Geometry-Calculator
 A basic geometry calculator.
 
+## Tests:
+To run the tests, first install the development dependencies, then run `npm run test`.
+
+```bash
+$ npm install
+$ npm run test
+```
+
 ## Example:
 ```js
 "use strict";
