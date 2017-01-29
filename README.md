@@ -46,5 +46,5 @@ assert(calculateTotalArea([
 ]) == 206);
 ```
 
-### `#calculateTotalArea`
+## `#calculateTotalArea`
 `calculateTotalArea(array)` returns the total area of the `IGeometricShapes` in the array.
