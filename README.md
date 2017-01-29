@@ -1,11 +1,18 @@
 # Geometry-Calculator
 A basic geometry calculator.
 
-## Tests:
-To run the tests, first install the development dependencies, then run `npm run test`.
+## Compilation:
+To compile the TypeScript files install the development dependencies, and then run `npm run build`.
 
 ```bash
 $ npm install
+$ npm run build
+```
+
+## Tests:
+To run the tests run `npm run test`.
+
+```bash
 $ npm run test
 ```
 
@@ -38,3 +45,6 @@ assert(calculateTotalArea([
     triangle
 ]) == 206);
 ```
+
+### `#calculateTotalArea`
+`calculateTotalArea(array)` returns the total area of the `IGeometricShapes` in the array.
